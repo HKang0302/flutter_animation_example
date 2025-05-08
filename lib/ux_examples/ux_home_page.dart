@@ -29,14 +29,14 @@ import 'package:flutter_deep_dive_example/animation_examples/hero_example.dart';
 // }
 
 /* UI Examples */
-class HomePage extends StatefulWidget {
-  const HomePage({super.key});
+class UXHomePage extends StatefulWidget {
+  const UXHomePage({super.key});
 
   @override
-  State<HomePage> createState() => _HomePageState();
+  State<UXHomePage> createState() => _UXHomePageState();
 }
 
-class _HomePageState extends State<HomePage> {
+class _UXHomePageState extends State<UXHomePage> {
   List<int> items = List.generate(20, (index) => index);
   bool isFetching = false;
 
