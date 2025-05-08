@@ -1,4 +1,4 @@
-# flutter_animation_example
+# flutter_deep_dive_example
 
 A new Flutter project.
 

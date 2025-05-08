@@ -1,4 +1,4 @@
-package com.example.flutter_animation_example
+package com.example.flutter_deep_dive_example
 
 import io.flutter.embedding.android.FlutterActivity
 
