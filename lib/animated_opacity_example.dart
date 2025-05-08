@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 
-class AnimatedAlignExample extends StatefulWidget {
-  const AnimatedAlignExample({super.key});
+class AnimatedOpacityExample extends StatefulWidget {
+  const AnimatedOpacityExample({super.key});
 
   @override
-  State<AnimatedAlignExample> createState() => _AnimatedAlignExampleState();
+  State<AnimatedOpacityExample> createState() => _AnimatedOpacityExampleState();
 }
 
-class _AnimatedAlignExampleState extends State<AnimatedAlignExample> {
+class _AnimatedOpacityExampleState extends State<AnimatedOpacityExample> {
   bool selected = false;
 
   @override
@@ -21,10 +21,11 @@ class _AnimatedAlignExampleState extends State<AnimatedAlignExample> {
       child: Container(
         height: 300,
         width: double.infinity,
-        color: Colors.blue,
-        child: AnimatedAlign(
-          alignment: selected ? Alignment.topLeft : Alignment.bottomRight,
-          curve: Curves.easeIn,
+        color: Colors.green,
+        alignment: Alignment.center,
+        child: AnimatedOpacity(
+          opacity: selected ? 0.3 : 1,
+          curve: Curves.linear,
           duration: const Duration(seconds: 2),
           child: Container(width: 50, height: 50, color: Colors.red),
         ),
